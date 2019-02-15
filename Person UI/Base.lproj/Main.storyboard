@@ -45,18 +45,48 @@
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="21" minValue="0.0" maxValue="130" translatesAutoresizingMaskIntoConstraints="NO" id="RPC-NC-Xpg">
                                 <rect key="frame" x="94" y="66.5" width="239" height="31"/>
                             </slider>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Gender:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sVu-Q9-dzt">
+                                <rect key="frame" x="24" y="112" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" translatesAutoresizingMaskIntoConstraints="NO" id="xId-GI-8NH">
+                                <rect key="frame" x="96" y="108.5" width="117" height="29"/>
+                                <segments>
+                                    <segment title="Female"/>
+                                    <segment title="Male"/>
+                                </segments>
+                            </segmentedControl>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="FmD-Zn-ptk">
+                                <rect key="frame" x="16" y="151.5" width="343" height="515.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wkt-58-7rU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="4C5-e7-5iD"/>
                             <constraint firstItem="RPC-NC-Xpg" firstAttribute="leading" secondItem="5ad-y8-peQ" secondAttribute="trailing" constant="10" id="6Qp-OE-8I1"/>
                             <constraint firstItem="e33-He-ONw" firstAttribute="centerY" secondItem="5ad-y8-peQ" secondAttribute="centerY" id="CHO-zG-EXP"/>
+                            <constraint firstItem="xId-GI-8NH" firstAttribute="leading" secondItem="sVu-Q9-dzt" secondAttribute="trailing" constant="10" id="Cq2-dR-eQ9"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="FmD-Zn-ptk" secondAttribute="trailing" id="GMg-LS-QqB"/>
+                            <constraint firstItem="sVu-Q9-dzt" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="Gx9-tj-grI"/>
                             <constraint firstItem="wkt-58-7rU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Hrk-OY-jwS"/>
+                            <constraint firstItem="xId-GI-8NH" firstAttribute="centerY" secondItem="sVu-Q9-dzt" secondAttribute="centerY" id="M6T-N0-wCQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="FmD-Zn-ptk" secondAttribute="bottom" id="OAe-pa-Aup"/>
                             <constraint firstItem="5ad-y8-peQ" firstAttribute="top" secondItem="wkt-58-7rU" secondAttribute="bottom" constant="20" id="R3B-gd-WLj"/>
+                            <constraint firstItem="FmD-Zn-ptk" firstAttribute="top" secondItem="xId-GI-8NH" secondAttribute="bottom" constant="15" id="Um8-Jk-yqf"/>
                             <constraint firstAttribute="trailingMargin" secondItem="e33-He-ONw" secondAttribute="trailing" id="VlY-9t-fbr"/>
+                            <constraint firstItem="FmD-Zn-ptk" firstAttribute="leading" secondItem="xId-GI-8NH" secondAttribute="trailing" constant="-197" id="XWK-9X-wJi"/>
+                            <constraint firstItem="sVu-Q9-dzt" firstAttribute="top" secondItem="5ad-y8-peQ" secondAttribute="bottom" constant="20" id="Xjg-ec-Gmc"/>
                             <constraint firstItem="5ad-y8-peQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="c9a-mP-4bz"/>
                             <constraint firstItem="HpY-yt-sZR" firstAttribute="leading" secondItem="wkt-58-7rU" secondAttribute="trailing" constant="10" id="jHv-RM-L7w"/>
                             <constraint firstItem="e33-He-ONw" firstAttribute="leading" secondItem="RPC-NC-Xpg" secondAttribute="trailing" constant="10" id="kBa-yR-u6r"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="xId-GI-8NH" secondAttribute="trailing" constant="146" id="tEF-vM-QB7"/>
+                            <constraint firstItem="FmD-Zn-ptk" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="toM-gW-h9U"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HpY-yt-sZR" secondAttribute="trailing" id="uUc-QH-Pwl"/>
                             <constraint firstItem="HpY-yt-sZR" firstAttribute="centerY" secondItem="wkt-58-7rU" secondAttribute="centerY" id="wpW-dy-h7G"/>
                             <constraint firstItem="RPC-NC-Xpg" firstAttribute="centerY" secondItem="5ad-y8-peQ" secondAttribute="centerY" id="zWH-Pe-3Th"/>
