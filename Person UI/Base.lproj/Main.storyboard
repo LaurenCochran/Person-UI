@@ -30,14 +30,36 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Age:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ad-y8-peQ">
+                                <rect key="frame" x="51" y="71" width="35" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="21" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="e33-He-ONw">
+                                <rect key="frame" x="341" y="71" width="18" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="21" minValue="0.0" maxValue="130" translatesAutoresizingMaskIntoConstraints="NO" id="RPC-NC-Xpg">
+                                <rect key="frame" x="94" y="66.5" width="239" height="31"/>
+                            </slider>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wkt-58-7rU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="4C5-e7-5iD"/>
+                            <constraint firstItem="RPC-NC-Xpg" firstAttribute="leading" secondItem="5ad-y8-peQ" secondAttribute="trailing" constant="10" id="6Qp-OE-8I1"/>
+                            <constraint firstItem="e33-He-ONw" firstAttribute="centerY" secondItem="5ad-y8-peQ" secondAttribute="centerY" id="CHO-zG-EXP"/>
                             <constraint firstItem="wkt-58-7rU" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="20" id="Hrk-OY-jwS"/>
+                            <constraint firstItem="5ad-y8-peQ" firstAttribute="top" secondItem="wkt-58-7rU" secondAttribute="bottom" constant="20" id="R3B-gd-WLj"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="e33-He-ONw" secondAttribute="trailing" id="VlY-9t-fbr"/>
+                            <constraint firstItem="5ad-y8-peQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="35" id="c9a-mP-4bz"/>
                             <constraint firstItem="HpY-yt-sZR" firstAttribute="leading" secondItem="wkt-58-7rU" secondAttribute="trailing" constant="10" id="jHv-RM-L7w"/>
+                            <constraint firstItem="e33-He-ONw" firstAttribute="leading" secondItem="RPC-NC-Xpg" secondAttribute="trailing" constant="10" id="kBa-yR-u6r"/>
                             <constraint firstAttribute="trailingMargin" secondItem="HpY-yt-sZR" secondAttribute="trailing" id="uUc-QH-Pwl"/>
                             <constraint firstItem="HpY-yt-sZR" firstAttribute="centerY" secondItem="wkt-58-7rU" secondAttribute="centerY" id="wpW-dy-h7G"/>
+                            <constraint firstItem="RPC-NC-Xpg" firstAttribute="centerY" secondItem="5ad-y8-peQ" secondAttribute="centerY" id="zWH-Pe-3Th"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
